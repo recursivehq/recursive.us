@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav-left {
+  flex-grow: 1;
+}
+
+.nav-right {
+  margin: 0 15px;
+}
+
+.logo {
+  width: 256px;
+}
+
+.nav-right a {
+  color: #000;
+}
+
+.contact-us {
+  background-color: rgb(48, 98, 225);
+  padding: 15px 50px;
+  border-radius: 25px;
+}
+
+.contact-us a {
+  color: #FFF;
+}
+
+/* Teaser */
+
+.teaser {
+  margin-top: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.teaser h1 {
+  color: rgb(48, 98, 225);
+  font-weight: bold;
+  font-size: 62px;
+}
+
+.learn-more {
+  margin-top: 70px;
+  color: rgb(48, 98, 225);
+  font-weight: bold;
+}
+
+/* Summary */
+
+.summary {
+  width: 100%;
+  background-color: rgb(48, 98, 225);
+  text-align: center;
+  color: #FFF;
+}
+
+.summary .description {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Features */
+
+.feature-header {
+  display:inline-block;
+  margin: 60px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 3px solid rgb(48, 98, 225);
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature-left {
+
+}
+
+.feature-right {
+
+}
