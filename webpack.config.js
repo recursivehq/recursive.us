@@ -7,8 +7,8 @@ const path = require("path");
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.join(__dirname, './dist'),
-    publicPath: path.join(__dirname, './dist')
+    path: path.join(__dirname, './docs'),
+    publicPath: path.join(__dirname, './docs')
   },
   module: {
     rules: [

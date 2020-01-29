@@ -6,7 +6,7 @@
   "author": "Tres Trantham <tres@recursive.us>",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf docs",
     "build": "npm run clean && webpack --mode production",
     "dev": "webpack-dev-server --mode development"
   },
