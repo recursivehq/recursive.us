@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Regular.woff2?v=3.11") format("woff2"),
+       url("Inter-Regular.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("Inter-Bold.woff2?v=3.11") format("woff2"),
+       url("Inter-Bold.woff?v=3.11") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("Inter-ExtraBold.woff2?v=3.11") format("woff2"),
+       url("Inter-ExtraBold.woff?v=3.11") format("woff");
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+body {
+  font-family: "Inter";
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 700;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav-left {
+  flex-grow: 1;
+}
+
+.nav-right {
+  margin: 0 15px;
+}
+
+.logo {
+  width: 256px;
+}
+
+.nav-right a {
+  color: #000;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(48, 98, 225);
+  padding: 15px 50px;
+  border-radius: 25px;
+}
+
+.button a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Teaser */
+
+.teaser {
+  margin-top: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.teaser h1 {
+  color: rgb(48, 98, 225);
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.teaser p {
+  font-family: "zeitung-mono";
+  font-size: 18px;
+}
+
+.teaser p.learn-more {
+  margin-top: 70px;
+  color: rgb(48, 98, 225);
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.teaser img {
+  width: 20px;
+}
+
+/* Summary */
+
+.summary {
+  width: 100%;
+  background-color: rgb(48, 98, 225);
+  text-align: center;
+  color: #FFF;
+}
+
+.summary .why-recursive {
+  padding-top: 50px;
+}
+
+.summary .why-recursive span {
+  background:
+    linear-gradient(
+      to left,
+      rgb(48, 98, 225) 0%,
+      rgb(48, 98, 225) 25%,
+      rgb(255,255,255) 25%,
+      rgb(255,255,255) 75%,
+      rgb(48, 98, 225) 75%
+    )
+    left bottom no-repeat;
+  padding-bottom: 10px;
+  background-size: 100% 3px ;
+}
+
+.summary h2 {
+  padding-top: 40px;
+  font-size: 42px;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.summary .description {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "zeitung-mono";
+  padding-bottom: 80px;
+}
+
+/* Features */
+
+.feature-header {
+  display:inline-block;
+  margin-top: 60px;
+  padding: 0 0 10px 0;
+  font-weight: 700;
+  background:
+    linear-gradient(
+      to right,
+      rgb(48, 98, 225) 0,
+      rgb(48, 98, 225) 65px,
+      rgb(255, 255, 255) 65px
+    )
+    left bottom no-repeat;
+  background-size: 100% 4px ;
+}
+
+.feature {
+  margin-top: 60px;
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-content h2 {
+  font-size: 40px;
+  color: rgb(48, 98, 225);
+  font-weight: 600;
+}
+
+.feature-content p {
+  font-family: "zeitung-mono";
+}
+
+.feature-left {
+  width: 40%;
+  margin-top: 0;
+}
+
+.feature-right {
+  margin: auto 0 0 0;
+}
+
+.feature .button {
+  margin-top: 30px;
+}
