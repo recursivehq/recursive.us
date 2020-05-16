@@ -25,7 +25,9 @@
        url("Inter-ExtraBold.woff?v=3.11") format("woff");
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
@@ -42,7 +44,7 @@ body {
 }
 
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -73,9 +75,7 @@ body {
   background-color: rgb(48, 98, 225);
   padding: 15px 50px;
   border-radius: 25px;
-}
-
-.button a {
+  font-size: 16px;
   color: #FFF;
   text-decoration: none;
   font-weight: 700;
@@ -113,18 +113,16 @@ body {
 
 /* Summary */
 
-.summary {
+.centered-content {
   width: 100%;
-  background-color: rgb(48, 98, 225);
   text-align: center;
-  color: #FFF;
 }
 
-.summary .why-recursive {
+.centered-content .header {
   padding-top: 50px;
 }
 
-.summary .why-recursive span {
+.centered-content .header span {
   background:
     linear-gradient(
       to left,
@@ -136,21 +134,26 @@ body {
     )
     left bottom no-repeat;
   padding-bottom: 10px;
-  background-size: 100% 3px ;
+  background-size: 100% 3px;
 }
 
-.summary h2 {
+.centered-content h2 {
   padding-top: 40px;
   font-size: 42px;
   font-family: "Inter";
   font-weight: 700;
 }
 
-.summary .description {
+.centered-content .description {
   width: 70%;
   margin: 0 auto;
   font-family: "zeitung-mono";
   padding-bottom: 80px;
+}
+
+.summary {
+  background-color: rgb(48, 98, 225);
+  color: #FFF;
 }
 
 /* Features */
@@ -202,4 +205,78 @@ body {
 
 .feature .button {
   margin-top: 30px;
+}
+
+/* Contact Us */
+
+.contact-us .header span {
+  background:
+    linear-gradient(
+      to left,
+      rgb(255,255,255) 0%,
+      rgb(255,255,255) 15%,
+      rgb(48, 98, 225) 15%,
+      rgb(48, 98, 225) 85%,
+      rgb(255,255,255) 85%
+    )
+    left bottom no-repeat;
+  padding-bottom: 10px;
+  background-size: 100% 3px;
+}
+
+.contact-us .container {
+  width: 50%;
+}
+
+.contact-us .description {
+  padding-bottom: 40px;
+}
+
+.input, textarea {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-family: "zeitung-mono";
+  font-size: 14px;
+}
+
+#contact-status {
+  font-size: 18px;
+  font-family: "zeitung-mono";
+}
+
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    width: 150px;
+  }
+
+  .inline-link {
+    display: none;
+  }
+  .teaser {
+    margin-top: 70px;
+  }
+  .feature-left {
+    width: 100%;
+  }
+  .feature-right {
+    display: none;
+  }
+
+  .contact-us .container {
+    width: 80%;
+  }
 }
