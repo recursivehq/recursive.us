@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -75,9 +75,6 @@ body {
   background-color: rgb(48, 98, 225);
   padding: 15px 50px;
   border-radius: 25px;
-}
-
-.button a, .button[type=submit] {
   font-size: 16px;
   color: #FFF;
   text-decoration: none;
@@ -258,4 +255,28 @@ body {
 #contact-status {
   font-size: 18px;
   font-family: "zeitung-mono";
+}
+
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    width: 150px;
+  }
+
+  .inline-link {
+    display: none;
+  }
+  .teaser {
+    margin-top: 70px;
+  }
+  .feature-left {
+    width: 100%;
+  }
+  .feature-right {
+    display: none;
+  }
+
+  .contact-us .container {
+    width: 80%;
+  }
 }
